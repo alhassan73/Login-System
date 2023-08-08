@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign-in Page</title>
+  </head>
+  <body>
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    <main
+      class="relative min-h-screen flex justify-center items-center"
+    >
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container m-auto">
+        <div
+          class="login-container md:w-[50%] lg:w-[30%] w-[80%] m-auto text-center rounded-2xl p-5"
+        >
+          <form class="flex flex-col items-center justify-center gap-10">
+            <h1 class="text-4xl font-semibold text-white">Sign in</h1>
+            <input
+              type="email"
+              id="signInMail"
+              class="rounded-full default:ring-4 w-[95%] md:w-[80%] p-4 inputs"
+              placeholder="Email"
+              autocomplete="off"
+            />
+            <div
+              class="input-box rounded-full bg-white default:ring-4 w-[95%] md:w-[80%] p-4 flex justify-between items-center inputs"
+            >
+              <input
+                type="password"
+                id="signInPass"
+                class="w-[100%]"
+                placeholder="Password"
+                autocomplete="off"
+              />
+              <i class="fa-solid fa-eye" id="showPass"></i>
+            </div>
+            <p class="text-white">
+              Does Not Have Account ?
+              <a href="./signup.html" class="ml-1 text-blue-950">Sign Up</a>
+            </p>
+            <button
+              type="button"
+              class="text-white rounded-full w-[60%] md:w-[30%] py-2 bg-violet-800 hover:bg-white hover:text-violet-800"
+              id="loginBtn"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="overflow-hidden font-semibold rounded-xl md:w-[50%] lg:w-[30%] w-[80%] p-6 py-9 text-rose-600 bg-neutral-200 alert flex justify-center items-center text-center"
+        id="popUpFail"
+      >
+        <p>Invalid Email Or Password !</p>
+        <div class="loader bg-rose-600"></div>
+      </div>
+      <div
+      class="overflow-hidden font-semibold rounded-xl md:w-[50%] lg:w-[30%] w-[80%] p-6 py-9 text-rose-600 bg-neutral-200 alert flex justify-center items-center text-center"
+      id="createUser"
+    >
+      <p>Please Sign Up First!</p>
+    </div>
+      <div
+        class="overflow-hidden font-semibold rounded-xl md:w-[50%] lg:w-[30%] w-[80%] p-6 py-9 text-green-600 bg-neutral-200 alert flex justify-center items-center text-center"
+        id="popUpSuccess"
+      >
+        <p></p>
+        <div class="bg-green-600 loader"></div>
+      </div>
+    </main>
+    <script src="./js/signin.js"></script>
+  </body>
+</html>

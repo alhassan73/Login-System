@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign-in Page</title>
+  </head>
+  <body>
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    <header class="relative min-h-screen flex justify-center items-center">
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <nav>
+          <div
+            class="container flex items-center justify-between px-10 py-5 m-auto text-xl"
+          >
+            <h2 class="text-white">Smart Login System</h2>
+            <button id="navToggler">
+              <i class="text-white fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+        <div class="container m-auto">
+          <div
+            class="overflow-hidden font-semibold rounded-xl md:w-[50%] lg:w-[30%] w-[80%] p-6 py-9 text-green-600 bg-neutral-200 alert flex justify-center items-center text-center"
+            id="popUpLogout"
+          >
+            <button
+              id="logoutBtn"
+              class="w-full p-3 text-red-700 border border-red-700 rounded-lg hover:bg-red-700 hover:text-white"
+            >
+              Log Out
+            </button>
+          </div>
+          <div
+            class="home-container md:w-[50%] lg:w-[30%] w-[80%] m-auto text-center rounded-2xl p-6"
+          >
+            <h1 class="text-4xl text-white" id="welcomeName"></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/signin.js"></script>
+  </body>
+</html>
